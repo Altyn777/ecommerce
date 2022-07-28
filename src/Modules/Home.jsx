@@ -1,8 +1,14 @@
 import React from "react";
 
-import Announcement from "../Components/Announcement";
-import Navbar from "../Components/Navbar";
-import Slider from "../Components/Slider";
+import {
+  Announcement,
+  Categories,
+  Navbar,
+  Products,
+  Slider,
+  Newsletter,
+  Footer,
+} from "../Components";
 
 // rafce
 const Home = () => {
@@ -11,6 +17,10 @@ const Home = () => {
       <Announcement />
       <Navbar />
       <Slider />
+      <Categories />
+      <Products />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };
