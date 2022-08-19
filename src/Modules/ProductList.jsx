@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 import {
@@ -41,6 +42,8 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const ProductList = () => {
+  const location = useLocation();
+  const category = location.pathname.split("/")[2];
   return (
     <Container>
       <Navbar />
