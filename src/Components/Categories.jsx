@@ -12,7 +12,7 @@ const Container = styled.div`
   ${mobile({ padding: "0", flexDirection: "column" })}
 `;
 
-const Categories = () => {
+export const Categories = () => {
   return (
     <Container>
       {categories.map((item) => (
@@ -21,5 +21,3 @@ const Categories = () => {
     </Container>
   );
 };
-
-export default Categories;

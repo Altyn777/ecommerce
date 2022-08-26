@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
   FavoriteBorderOutlined,
@@ -67,17 +68,19 @@ const Icon = styled.div`
   }
 `;
 
-const Product = ({ item }) => {
+export const Product = ({ item }) => {
   return (
     <Container>
       <Circle />
-      <Image src={item?.img} loading="lazy" />
+      <Image src={item.img} loading="lazy" />
       <Info>
         <Icon>
           <ShoppingCartOutlined />
         </Icon>
         <Icon>
-          <SearchOutlined />
+          <Link to={`/product/${item._id}`}>
+            <SearchOutlined />
+          </Link>
         </Icon>
         <Icon>
           <FavoriteBorderOutlined />
@@ -86,5 +89,3 @@ const Product = ({ item }) => {
     </Container>
   );
 };
-
-export default Product;

@@ -58,7 +58,7 @@ const Link = styled.a`
   cursor: pointer;
 `;
 
-const Login = () => {
+export const Login = () => {
   return (
     <Container>
       <Wrapper>
@@ -74,5 +74,3 @@ const Login = () => {
     </Container>
   );
 };
-
-export default Login;

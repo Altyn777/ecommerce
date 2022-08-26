@@ -11,7 +11,7 @@ import {
 } from "../Components";
 
 // rafce
-const Home = () => {
+export const Home = () => {
   return (
     <div>
       <Announcement />
@@ -24,5 +24,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

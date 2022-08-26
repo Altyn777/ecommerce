@@ -85,7 +85,7 @@ const Payment = styled.img`
   width: 50%;
 `;
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Container>
       <Left>
@@ -138,5 +138,3 @@ const Footer = () => {
     </Container>
   );
 };
-
-export default Footer;

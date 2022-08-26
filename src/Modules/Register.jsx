@@ -55,7 +55,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Register = () => {
+export const Register = () => {
   return (
     <Container>
       <Wrapper>
@@ -77,5 +77,3 @@ const Register = () => {
     </Container>
   );
 };
-
-export default Register;
