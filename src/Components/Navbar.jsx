@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+
 import styled from "styled-components";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
@@ -68,6 +70,8 @@ const Input = styled.input`
 `;
 
 export const Navbar = () => {
+  const quantity = useSelector((state) => state.cart.quantity);
+
   return (
     <Container>
       <Wrapper>
@@ -85,7 +89,11 @@ export const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary" overlap="rectangular">
+            <Badge
+              badgeContent={quantity}
+              color="primary"
+              overlap="rectangular"
+            >
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
